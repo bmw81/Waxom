@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../fonts/ttf/Montserrat-Light.ttf);
+}
+
+body {
+    font-family: Montserrat-Light;
+}
+
+header {
+    width: 1920px;
+    min-height: 1024px;
+    margin: 0 auto;
+    background: url(../img/bg-logo.jpg) no-repeat;
+    padding: 40px 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.main-header {
+    width: 1230px;
+    min-height: 56px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.main-header-logo {
+    float: left;
+}
+
+.main-nav-list {
+    float: left;
+    padding: 0;
+    width: 670px;
+    float: left;
+    margin-left: 217px;
+}
+
+.main-nav-list li {
+    float: left;
+    padding-right: 29px;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.main-nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bin{
+    float: left;
+    padding: 0;
+    margin: 13px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.search {
+    float: left;
+    padding: 0;
+    margin: 13px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+a:hover {
+    color: #c7b299;
+}
+
+svg {
+    fill: #ffffff;
+}
+
+a:active, svg:active {
+    color: #df8b26;
+}
+
+svg:hover {
+    fill: #c7b299;;
+}
+
+svg:active {
+    fill: #df8b26;;
+}
+
