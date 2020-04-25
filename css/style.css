@@ -3,6 +3,11 @@
     src: url(../fonts/ttf/Montserrat-Light.ttf);
 }
 
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/ttf/ralewaylight.ttf);
+}
+
 body {
     font-family: Montserrat-Light;
 }
@@ -27,14 +32,27 @@ header {
 
 .main-header-logo {
     float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 185px;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: #fff;
 }
+
+.logo-txt {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+  }
+  
 
 .main-nav-list {
     float: left;
     padding: 0;
     width: 670px;
     float: left;
-    margin-left: 217px;
+    margin-left: 216px;
 }
 
 .main-nav-list li {
@@ -88,3 +106,55 @@ svg:active {
     fill: #df8b26;;
 }
 
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1640px;
+    min-height: 635px;
+    margin: 0 auto;
+    margin-top: 245px;
+    border: 1px solid white;
+    position: relative;
+  }
+
+  .carousel-btn {
+    display: block;
+    width: 42px;
+    height: 75px;
+  }
+
+  .carousel-btn:nth-of-type(1) {
+    margin: 0 450px 0 0;
+  }
+  
+  .carousel-btn:nth-of-type(2) {
+    margin: 0 0 0 450px;
+  }
+
+  .carousel-txt {
+    width: 627px;
+    min-height: 320px;
+    background-color: #ccc;
+  }
+
+  .carousel-pagination {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding: 5px 0;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .carousel-pagination-item {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: gold;
+  }
