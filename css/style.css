@@ -8,6 +8,16 @@
     src: url(../fonts/ttf/ralewaylight.ttf);
 }
 
+@font-face {
+    font-family: Raleway-Medium;
+    src: url(../fonts/ttf/ralewaymedium.ttf);
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url(../fonts/ttf/ralewayextrabold.ttf);
+}
+
 body {
     font-family: Montserrat-Light;
 }
@@ -20,6 +30,22 @@ header {
     padding: 40px 0;
     box-sizing: border-box;
     color: #fff;
+}
+
+h2 {
+    margin: 0;
+    font-size: 36px;
+    font-family: Raleway-Medium;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 5px;
+    font-size: 52px;
+    font-family: Raleway-ExtraBold;
+    font-weight: 800;
+    line-height: 1.2;
 }
 
 .main-header {
@@ -112,10 +138,10 @@ svg:active {
     justify-content: center;
     align-items: center;
     width: 1640px;
-    min-height: 635px;
+    min-height: 770px;
     margin: 0 auto;
-    margin-top: 245px;
-    border: 1px solid white;
+    margin-top: 120px;
+    /* border: 1px solid white; */
     position: relative;
   }
 
@@ -123,6 +149,7 @@ svg:active {
     display: block;
     width: 42px;
     height: 75px;
+    opacity: 0.5;
   }
 
   .carousel-btn:nth-of-type(1) {
@@ -136,15 +163,49 @@ svg:active {
   .carousel-txt {
     width: 627px;
     min-height: 320px;
-    background-color: #ccc;
+    /* background-color: #ccc; */
+    text-align: center;
+    margin-top: -130px;
   }
+
+  .carousel-txt p {
+      width: 570px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+  }
+
+  .carousel-txt-btn {
+      width: 170px;
+      min-height: 53px;
+      margin-top: 50px;
+      background-color: #998675;
+      border-radius: 5px;
+      font-family: Raleway-ExtraBold;
+      font-size: 14px;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 23px;
+      padding: 0;
+      border: none;
+      outline: none;
+  }
+
+  .carousel-txt-btn:hover, .carousel-pagination-item:hover {
+      background-color: #c7854b;
+  }
+
+  .carousel-txt-btn:active, .carousel-pagination-item:active {
+    background-color: #ece3db;
+}
 
   .carousel-pagination {
     display: flex;
     justify-content: center;
     width: 100px;
     padding: 5px 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
     bottom: 0;
     margin: auto;
@@ -156,5 +217,14 @@ svg:active {
     height: 10px;
     margin: 0 5px;
     border-radius: 50%;
-    background-color: gold;
+    background-color: #fff;
+    opacity: 0.5;
+  }
+
+  .carousel-pagination-item:nth-of-type(2) {
+      width: 12px;
+      height: 12px;
+      border: 2px solid #fff;
+      background: none;
+      box-sizing: border-box;
   }
