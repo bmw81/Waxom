@@ -23,9 +23,18 @@
     src: url(../fonts/ttf/ralewaysemibold.ttf);
 }
 
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(../fonts/ttf/ralewayregular.ttf);
+}
+
 body {
     font-family: Montserrat-Light;
 }
+
+p {
+    margin: 0;
+  }
 
 a  {
     text-decoration: none;
@@ -209,6 +218,7 @@ svg:active {
       padding: 0;
       border: none;
       outline: none;
+      box-sizing: border-box;
   }
 
   .carousel-txt-btn:hover, .carousel-pagination-item:hover {
@@ -324,7 +334,6 @@ svg:active {
   .windows {
       width: 100%;
       min-height: 700px;
-      border: 1px solid yellow;
       box-sizing: border-box;
       background-color: #fbfaf8;
   }
@@ -386,4 +395,53 @@ svg:active {
 
   .photo-browser:hover:last-child {
       z-index: 3;
+  }
+
+  .purchase {
+      width: 100%;
+      height: 150px;
+      background-color: #f4f5f8;
+      background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+      box-sizing: border-box;
+  }
+
+  .purchase-wrapper {
+      width: 1230px;
+      min-height: 150px;
+      margin: 0 auto;
+      padding: 50px;
+      box-sizing: border-box;
+  }
+
+  .purchase-wrapper-txt {
+      float: left;
+  }
+
+  .purchase-wrapper-txt :first-child {
+      font-family: Raleway-Regular;
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #c7b299;
+  }
+
+  .purchase-wrapper-txt :nth-child(2) {
+    font-family: Raleway-Regular;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .purchase-wrapper-txt :last-child {
+    font-family: Montserrat-Light;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #615855;
+  }
+
+  .purchase-btn {
+      float: right;
+      margin: 0;
   }
