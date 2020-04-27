@@ -258,7 +258,6 @@ svg:active {
       width: 1230px;
       min-height: 375px;
       margin: 0 auto;
-      border: 1px solid red;
       padding: 0 30px;
       display: flex;
       justify-content: space-between;
@@ -269,9 +268,8 @@ svg:active {
   .service {
       width: 270px;
       min-height: 375px;
-      border: 1px black solid;
       box-sizing: border-box;
-      padding: 80px 0;
+      padding-top: 80px;
   }
 
   .service-link {
@@ -287,10 +285,105 @@ svg:active {
     color: #c7b299;
   }
 
+  .service-link:active {
+    fill: #df8b26;
+    color: #df8b26;
+  }
+
   .service-txt {
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       font-family: Montserrat-Light;
       font-size: 14px;
       line-height: 24px;
       font-weight: 300;
       color: #8c8c8c;
+      bo
+  }
+
+  .service-txt::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #f1eee9;
+    margin: 0 auto;
+    align-self: flex-end;
+  }
+
+  .service-txt:hover::after {
+    background-color: #c7b299;
+  }
+
+  .service-txt:active::after {
+    background-color: #df8b26   ;
+  }
+
+  .windows {
+      width: 100%;
+      min-height: 700px;
+      border: 1px solid yellow;
+      box-sizing: border-box;
+      background-color: #fbfaf8;
+  }
+
+  .windows-wrapper {
+      width: 1230px;
+      min-height: 700px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding-top: 80px;
+      text-align: center;
+  }
+
+  .windows-title {
+      font-family: Raleway-SemiBold;
+      font-size: 30px;
+      color: #555;
+  }
+
+  .windows-txt {
+      width: 760px;
+      margin: 25px auto;
+      font-family: Montserrat-Light;
+      font-size: 16px;
+      line-height: 28px;
+      color: #8c8c8c;
+      box-sizing: border-box;
+  }
+
+  .photo {
+      width: 1230px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+  }
+
+  .photo-browser:first-child {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .photo-browser:nth-of-type(2) {
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .photo-browser:last-child {
+    position: absolute;
+    top: 82px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .photo-browser:hover:first-child {
+    z-index: 3;
+}
+
+  .photo-browser:hover:last-child {
+      z-index: 3;
   }
