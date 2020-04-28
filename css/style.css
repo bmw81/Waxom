@@ -265,71 +265,86 @@ svg:active {
   }
 
   .services-flex {
-      width: 1230px;
-      min-height: 375px;
-      margin: 0 auto;
-      padding: 0 30px;
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      box-sizing: border-box;
-  }
-
-  .service {
-      width: 270px;
-      min-height: 375px;
-      box-sizing: border-box;
-      padding-top: 80px;
-  }
-
-  .service-link {
-    display: block;
-    fill: #555;
-    color: #555;
-    font-family: Raleway-SemiBold;
-    font-size: 22px;
-  }
-
-  .service-link:hover {
-    fill: #c7b299;
-    color: #c7b299;
-  }
-
-  .service-link:active {
-    fill: #df8b26;
-    color: #df8b26;
-  }
-
-  .service-txt {
-      min-height: 100px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      font-family: Montserrat-Light;
-      font-size: 14px;
-      line-height: 24px;
-      font-weight: 300;
-      color: #8c8c8c;
-      bo
-  }
-
-  .service-txt::after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 5px;
-    background-color: #f1eee9;
+    width: 1230px;
+    min-height: 375px;
     margin: 0 auto;
-    align-self: flex-end;
-  }
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+}
 
-  .service-txt:hover::after {
-    background-color: #c7b299;
-  }
+.service {
+    width: 270px;
+    min-height: 375px;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
 
-  .service-txt:active::after {
-    background-color: #df8b26   ;
-  }
+.service-icon {
+fill: #555;
+}
+
+.service-link {
+  color: #555;
+  font-family: Raleway-SemiBold;
+  font-size: 22px;
+}
+
+.service-link :nth-child(2) {
+    margin: 20px 0;
+    font-family: Raleway;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.service:hover .service-link {
+  color: #c7b299;
+}
+
+.service:hover .service-icon {
+  fill: #c7b299;
+}
+
+.service:active .service-link{
+  color: #df8b26;
+}
+
+.service:active .service-icon {
+  fill: #df8b26;
+}
+
+.service-txt {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
+.service::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #f1eee9;
+  margin: 0 auto;
+  align-self: flex-end;
+}
+
+.service:hover:after {
+  background-color: #c7b299;
+}
+
+.service:active::after {
+  background-color: #df8b26   ;
+}
 
   .windows {
       width: 100%;
