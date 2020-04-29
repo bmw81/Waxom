@@ -134,15 +134,6 @@ h1 {
     fill: #fff;
 }
 
-/* .search {
-    float: left;
-    padding: 0;
-    margin: 13px;
-    background: none;
-    border: none;
-    outline: none;
-} */
-
 a:hover {
     color: #c7b299;
 }
@@ -362,13 +353,13 @@ fill: #555;
       text-align: center;
   }
 
-  .windows-title {
+  .windows-title, .projects-title {
       font-family: Raleway-SemiBold;
       font-size: 30px;
       color: #555;
   }
 
-  .windows-txt {
+  .windows-txt, .projects-txt {
       width: 760px;
       margin: 25px auto;
       font-family: Montserrat-Light;
@@ -459,4 +450,56 @@ fill: #555;
   .purchase-btn {
       float: right;
       margin: 0;
+  }
+
+  .projects {
+    width: 1230px;
+    min-height: 1165px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 80px 30px;
+    text-align: center;
+  }
+
+  .projects-nav {
+    width: 605px;
+    min-height: 32px;
+    margin: 0 auto;
+    border: 1px solid red;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projects-nav button {
+    width: 120px;
+    min-height: 32px;
+    border: 1.0px solid #ebebeb;
+    border-radius: 3.0px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    color: #8c8c8c;
+    outline: none;
+  }
+
+  .projects-nav button:hover {
+    background-color: #c7854b;
+    color: #fff;
+  }
+
+  .projects-nav button:active {
+    background-color: #ece3db;
+  }
+
+  .projects-nav :first-child {
+    width: 72px;
+    background-color: #998675;
+    color: #fff;
+  }
+
+  .projects-nav :last-child {
+    width: 135px;
   }
