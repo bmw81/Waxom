@@ -428,7 +428,7 @@ fill: #555;
       float: left;
   }
 
-  .purchase-wrapper-txt :first-child {
+  .purchase-wrapper-txt :first-child { /*Работает только с пробелом между классом и псевдоклассом - все что связано с child*/
       font-family: Raleway-Regular;
       font-size: 28px;
       line-height: 1.2;
