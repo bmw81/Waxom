@@ -720,3 +720,52 @@ fill: #555;
     font-weight: 400;
     color: #c7b299;
   }
+
+  .mobile {
+    width: 100%;
+    min-height: 695px;
+    background-color: #fbfaf8;
+  }
+
+  .mobile-wrapper {
+    margin: 0 auto;
+    width: 1230px;
+    min-height: 695px;
+    padding: 187px 30px;
+    box-sizing: border-box;
+    background-image: url(../img/mobike_img.png);
+    background-repeat: no-repeat;
+    background-position: 30px 80px;
+  }
+
+  .mobile-txt {
+    width: 675px;
+    min-height: 321px;
+    float: right;
+    box-sizing: border-box;
+  }
+
+  .mobile-txt h2 {
+    font-family: Raleway-SemiBold;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #555;
+  }
+
+  .mobile-txt p, .mobile-txt ul {
+    margin-top: 30px;
+    font-family: Montserrat-Light;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8c8c8c;
+  }
+
+  .mobile-txt ul {
+    line-height: 30px;
+    list-style-image: url(../img/marker.png);
+    padding-left: 80px;
+  }
+
+  .mobile-txt ul li {
+    padding-left: 20px;
+  }
