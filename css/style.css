@@ -339,7 +339,7 @@ fill: #555;
 }
 
 .service:active::after {
-  background-color: #df8b26   ;
+  background-color: #df8b26;
 }
 
   .windows {
@@ -436,7 +436,7 @@ fill: #555;
       color: #c7b299;
   }
 
-  .purchase-wrapper-txt :nth-child(2) {
+  .purchase-wrapper-txt:nth-child(1) {
     font-family: Raleway-Regular;
     font-size: 28px;
     line-height: 1.2;
@@ -680,19 +680,23 @@ fill: #555;
     outline: none;
   }
 
-  .video-content :first-child {
+  .video-play-btn {
+    margin: 0 auto;
+    display: flex;
     width: 100px;
     height: 100px;
+    border: none;
     border-radius: 50%;
-    opacity: 0.2;
-    background-color: #000000;
-    background-image: url(../img/icon_play.png); /*Вокруг серого фона круга прозрачная окружность - ?*/
-    background-repeat: no-repeat;
-    background-position: center;
     outline: none;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
-  .video-content :first-child:hover {
+  .video-play-btn-icon {
+    margin: auto;
+    fill: #fff;
+  }
+
+  .video-play-btn:hover {
     background-color: #565a5e;
     opacity: 1;
   }
@@ -711,7 +715,7 @@ fill: #555;
     color: #fff;
   }
 
-  .video-content :last-child {
+   .video-content time {
     display: block;
     margin-top: 40px;
     font-family: Montserrat-Regular;
@@ -719,7 +723,7 @@ fill: #555;
     line-height: 24px;
     font-weight: 400;
     color: #c7b299;
-  }
+   } 
 
   .mobile {
     width: 100%;
@@ -768,4 +772,57 @@ fill: #555;
 
   .mobile-txt ul li {
     padding-left: 20px;
+  }
+
+  .statistic {
+    width: 100%;
+    min-height: 300px;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+  }
+
+  .statistic-wrapper {
+    width: 1230px;
+    min-height: 300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 65px 155px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+  .statistic-item {
+    width: 132px;
+    min-height: 171px;
+    text-align: center;
+  }
+
+  .statistic-item :first-child {
+    fill: #c7b299;
+  }
+
+  .statistic-item :nth-child(2) {
+    display: block;
+    margin-top: 15px;
+    font-family: Montserrat-Light;
+    font-size: 48px;
+    color: #fff;
+  }
+
+  .statistic-item :last-child {
+    color: #c7b299;
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .statistic-item::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
   }
