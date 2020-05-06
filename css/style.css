@@ -12,7 +12,7 @@
     font-family: Raleway;
     src: url(../fonts/ttf/ralewaylight.ttf);
 }
-
+  
 @font-face {
     font-family: Raleway-Medium;
     src: url(../fonts/ttf/ralewaymedium.ttf);
@@ -130,7 +130,6 @@ h1 {
 
 .main-nav-list a {
     color: #fff;
-    /* text-decoration: none; */
     font-size: 14px;
 }
 
@@ -222,7 +221,7 @@ svg:active {
       box-sizing: border-box;
   }
 
-  .carousel-txt-btn:hover, .carousel-pagination-item:hover {
+  .carousel-txt-btn:hover {
       background-color: #c7854b;
   }
 
@@ -232,31 +231,26 @@ svg:active {
 
   .carousel-pagination {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100px;
-    padding: 5px 0;
-    /* border: 1px solid red; */
     position: absolute;
     bottom: 0;
-    margin: auto;
   }
   
   .carousel-pagination-item {
     display: block;
     width: 10px;
     height: 10px;
-    margin: 0 5px;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0.5;
+    border: 2px solid transparent;
   }
 
-  .carousel-pagination-item:nth-of-type(2) {
-      width: 12px;
-      height: 12px;
-      border: 2px solid #fff;
-      background: none;
-      box-sizing: border-box;
+  .carousel-pagination-item:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    transform: scale(1.2);
   }
 
   header::after { /*?*/
