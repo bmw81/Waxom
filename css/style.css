@@ -55,7 +55,7 @@ header {
     min-height: 1024px;
     margin: 0 auto;
     background: url(../img/bg-logo.jpg) no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 40px 0;
     box-sizing: border-box;
     color: #fff;
@@ -91,8 +91,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
     width: 185px;
-    /* border: 1px solid black; */
-    /* text-decoration: none; */
     color: #fff;
     fill: #fff;
 }
@@ -141,6 +139,11 @@ h1 {
     border: none;
     outline: none;
     fill: #fff;
+}
+
+label,
+#menu {
+  display: none;
 }
 
 a:hover {
@@ -659,7 +662,7 @@ fill: #555;
 
   .section-video {
     margin: 0 auto;
-    width: 1920px;
+    width: 100%;
     height: 705px;
     position: relative;
   }
@@ -1004,7 +1007,7 @@ fill: #555;
   }
 
   .clients-wrapper {
-    width: 1110px;;
+    width: 1110px;
     height: 210px;
     margin: 140px auto;
     display: flex;
@@ -1184,4 +1187,138 @@ fill: #555;
 
 .footer-copyrights-wrapper span a {
   color: #959595;
+}
+
+@media (max-width: 480px) {
+
+  header {
+    width: 100%;
+    background-size: auto;
+    min-height: auto;
+  }  
+
+  label {
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-image:  url('https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png');
+    background-size: 100%;
+    background-position: 0 0;
+    background-color: #fff;
+    margin-left: 180px;
+  }
+  
+  .main-nav-list {
+    height: 0;
+    display: flex;
+    visibility: hidden;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .main-nav-list li {
+    text-align: center;
+    background-color: #ccc;
+    margin-top: 2px;
+  }
+  
+  .bin, .search {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ .main-nav-list {
+  visibility: visible;
+  height: auto;
+  }
+
+  .carousel {
+    display: none;
+    height: 0;
+  }
+
+  .services-flex {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 40%;
+  }
+
+  .windows, .purchase, .projects-nav, .projects-cards, .projects-main-btn, .section-video, .statistic, .posts button, .footer-main {
+    display: none;
+    height: 0;
+  }
+
+  .projects {
+    width: 100%;
+    min-height: auto;
+    padding: 40px 10px;
+  }
+
+  .projects-txt {
+    width: 100%;
+  }
+
+  .mobile {
+    width: 100%;
+  }
+
+  .mobile-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .mobile-txt {
+    width: auto;
+    text-align: center;
+  }
+
+  .mobile-txt p, .mobile-txt ul {
+    color: #000;
+  }
+
+  .posts {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .posts p {
+    width: 100%;
+  }
+
+  .posts-cards {
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 50px;
+  }
+
+  .clients-wrapper {
+    width: 100%;
+    min-height: 210px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-copyrights {
+    width: 100%;
+  }
+
+  .footer-copyrights-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-copyrights-wrapper span {
+    display: none;
+    height: 0;
+  }
 }
